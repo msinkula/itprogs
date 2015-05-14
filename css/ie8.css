@@ -1,0 +1,31 @@
+/* CSS Document */
+
+
+
+#bd .wrapper {
+	background-color:#fff;
+	padding:10px 20px 40px;
+	width:920px;
+	overflow:hidden;
+}
+
+/*********************************************************************
+	Footer
+*********************************************************************/
+
+
+#ft {
+	background-image:none;
+	height: 370px;
+}
+
+#ft .wrapper {
+	background: url(../images/itp-footer-background.jpg) repeat-x center top;
+	border-top:5px solid #004863;
+	overflow:visible;
+	height: 320px;
+	margin-top:-20px;
+/*	padding:5px 20px 20px;*/
+	width:920px;
+	position:relative;
+}

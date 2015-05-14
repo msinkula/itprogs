@@ -1,0 +1,24 @@
+# All these are from the Wordpress codex page htaccess_for_subdirectories
+
+# prevents these files from being served from the directory
+
+<FilesMatch "\.(php|pl|py|jsp|asp|htm|shtml|sh|cgi)$">
+ForceType text/plain
+</FilesMatch>
+
+# Prevent script execution by treating these as text files
+
+AddType text/plain .pl .cgi .php
+
+
+# Another way to force these to be text files
+
+<FilesMatch "\.(php|pl|py|jsp|asp|htm|shtml|sh|cgi)$">
+ForceType text/plain
+</FilesMatch>
+
+
+# All these file types will show a 403 error
+
+Options -ExecCGI
+AddHandler cgi-script .php .pl .py .jsp .asp .htm .shtml .sh .cgi
